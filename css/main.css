@@ -1,107 +1,97 @@
-body{
+body,html{
+	width: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	background-color: #00AECC;
 	font-family: Arial;
 }
+/* header */
 header{
 	width: 100%;
 	height: 60px;
 	background-color: #0094AE;	
+	display: flex;
+	justify-content: center;
 }
 img{
 	width: 100px;
-	margin: 15px 600px;
 }
+/* cnntenedor de contenido*/
 section{
-	padding: 40px;
-	position: relative;
+	margin-top: 40px;
 }
-a{
-	color: #fff;
-	text-decoration: none;
+/* contenido de lista*/
+.wrapperList{
+	height: auto;
+    min-height: 30px;
+    width: 270px;
+    padding: 4px;
+    border-radius: 3px;
+    -webkit-transition: background 85ms ease-in,opacity 40ms ease-in,border-color 85ms ease-in;
+    transition: background 85ms ease-in,opacity 40ms ease-in,border-color 85ms ease-in;
+    background: rgba(0,0,0,.12);
+    cursor: pointer;
+    color: #fff;
 }
-#formulario-papa{
-	display: inline-block;
+.wrapperList:hover {
+    background: rgba(0,0,0,.3);
 }
-#agregarLista{
-	padding: 10px 80px 10px 10px;
-	background-color: #0094AE;
-	border-radius: 10px;
-	vertical-align: top;
-}
-#agregarLista:hover{
-	background-color: #007A8F;
-}
-#formLista{
-	display: none;
-}
-.bold{
-	font-weight: bold;
-}
-.styleForm{
-	width: 200px;
-	background-color: #E2E4E6;
-	padding: 10px;
-	border-radius: 5px;
-	display: inline-block;
-	margin-left: 10px;
-	margin-bottom: 10px;
-	margin-right: 10px;
-	vertical-align: top;
-}
-.styleInput{
-	padding: 9px;
-	background-color: #C5C7C9;
-	border-radius: 5px;
-	margin-bottom: 5px;
-}
-.styleButton{
-	background-color: #5DB449;
-	border-radius: 10px;
-	color: white;
-	padding: 8px 10px;
-	text-align: center;
-	text-decoration: none;
-}
-.enlaceTarjeta{
-	color: gray;
-}
-.enlaceTarjeta:hover{
-	text-decoration: underline;
-	color: gray;
-}
-.tarjetaNuevaD{
+.placeholder{
 	display: block;
-  width: 130px;
-  float: left;
-  margin-left: 240px;
-  margin-top: -55px;
-  color: #fff;
+	padding: 7px;
+    color: rgba(255,255,255,.7);
+    -webkit-transition: color 85ms ease-in;
+    transition: color 85ms ease-in;
 }
-.left{
-  top: 40px;
-  left: 280px;
-  position: absolute;
+/*seccion de agregar lista*/
+.listName{
+	background: 0 0;
+    border-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    display: none;
+    margin: 0;
 }
-.textArea{
-	width: 95%;
-	margin: 5px 0;
-	border-radius: 5px;
-	border-color: transparent;
+.wrapperList.modAdd {
+    height: auto;
+    min-height: 30px;
+    padding: 4px;
+    border-radius: 3px;
+    background-color: #E2E4E6;
+    -webkit-transition: background 85ms ease-in,opacity 40ms ease-in,border-color 85ms ease-in;
+    transition: background 85ms ease-in,opacity 40ms ease-in,border-color 85ms ease-in;
 }
-.styleDiv{
-	background-color: #fff;
-	width: 95%;
-	border-radius: 5px;
-	padding: 5px;
-	margin: 8px 0;
-	word-wrap: break-word;
+/*bnts de agregar lista*/
+.listControls{
+	height: 2pc;
+    -webkit-transition: margin 85ms ease-in,height 85ms ease-in;
+    transition: margin 85ms ease-in,height 85ms ease-in;
+    overflow: hidden;
+    margin: 4px 0 0;
 }
-.over{
-	border-style: outset;
-	/*border: 1px  #C1C3C4;*/
+.btnSave{
+	background: linear-gradient(to bottom,#61BD4F 0,#5AAC44 100%);
+    box-shadow: 0 1px 0 #3F6F21;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    float: left;
+    min-height: 30px;
+    height: 30px;
+    margin-top: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
-.colorDnD{
-	background-color: #0094AE;
+.cancelar i{
+	font-size: 24px;
+    margin: 3px 5px 10px;
 }
+.close:hover{
+	color: #4d4d4d;
+    text-decoration: none;
+}
+
