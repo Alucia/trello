@@ -18,10 +18,10 @@
 	<section  class="container" id="contListas">
 		<div class="wrapperList ">
 			<form>
-				<span class="placeholder">Añadir una lista...</span>
+				<span id="list" class="placeholder">Añadir una lista...</span>
 			</form>
-			<form>
-				<input class="listName" type="text" name="name" placeholder="Añadir una lista..." autocomplete="off" dir="auto" maxlength="512">
+			<form class="newList hidden" id="newList">
+				<input id="listName" class="listName" type="text" name="name" placeholder="Añadir una lista..." autocomplete="off" dir="auto" maxlength="512">
 				<div class="listControls">
 					<input class="btnSave btn btn-success" type="submit" value="Guardar">
 					<a class="cancelar" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
