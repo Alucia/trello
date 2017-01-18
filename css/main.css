@@ -41,7 +41,6 @@ section{
     border-radius: 3px;
     background-color: #E2E4E6;
 }
-
 .placeholder{
     cursor: pointer;
     display: inline-block;
@@ -106,4 +105,30 @@ section{
 	color: #4d4d4d;
     text-decoration: none;
 }
+/*agregando cards*/
+.nameList{
+  padding:8px;
+  word-break: break-all;
+  white-space: normal;
+}
+.newCard{
+  border-radius: 0 0 3px 3px;
+  color: #8c8c8c;
+  padding: 8px 90px 12px 10px;
+  text-decoration: none;
+  background-color: #E2E4E6;
+}
+.contenedor{
+  display: inline-block;
+  vertical-align: top;
+  background-color: #E2E4E6;
+  border-radius: 3px 3px;
+  color: #4D4D4D;
+  font-weight: bold;
+  margin-left: 16px;
+  background-color: #E2E4E6;
+  word-wrap: break-word;
+  width: 270px;
+}
+
 

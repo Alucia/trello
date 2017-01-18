@@ -24,5 +24,31 @@ window.addEventListener("load", function(){
 	        botonGuardar.disabled = false;
 	    } 
 	}
-	
+	function Listacreada(e){
+	    e.preventDefault();
+	    newList.classList.add("hidden");
+	    lista.classList.remove("hidden");
+
+	    // creando variables locales para la funcion Listacreda
+	    var padre = this.parentElement.parentElement;
+	    var nameList = document.createElement("div");
+	    var newCard= document.createElement("div");
+	    var contenedor = document.createElement("div");
+
+	    contenedor.classList.add("contenedor");
+	    nameList.classList.add("nameList");
+	    newCard.classList.add("añadirCard");
+	    padre.setAttribute("draggable", "true");
+
+	    nameList.innerText = listName.value;
+    	listName.value = "";
+
+    	newCard.innerText = "Añadir una Tarjeta...";
+    
+	    contenedorTrello.appendChild(contenedor);
+	    padre.appendChild(newCard);
+	    padre.insertBefore(nameList,padre.childNodes[0]);
+	    contenedor.insertBefore(lista,contenedor.childNodes[0]);
+	    contenedor.insertBefore(anadirForm,contenedor.childNodes[1]);
+    }
 });
