@@ -23,32 +23,43 @@ section{
 }
 /* contenido de lista*/
 .wrapperList{
-	height: auto;
-    min-height: 30px;
+	word-break: break-all;
+    white-space: normal;
+    border-radius: 3px 3px;
+    color: #4D4D4D;
+    font-weight: bold;
+    margin-left: 16px;
+    /*background-color: #E2E4E6;*/
     width: 270px;
+    display: inline-block;
+    vertical-align: top;
+}
+.addList{
+    height: auto;
+    min-height: 30px;
     padding: 4px;
     border-radius: 3px;
-    -webkit-transition: background 85ms ease-in,opacity 40ms ease-in,border-color 85ms ease-in;
-    transition: background 85ms ease-in,opacity 40ms ease-in,border-color 85ms ease-in;
-    background: rgba(0,0,0,.12);
-    cursor: pointer;
-    color: #fff;
+    background-color: #E2E4E6;
 }
-.wrapperList:hover {
-    background: rgba(0,0,0,.3);
-}
+
 .placeholder{
-	display: block;
-	padding: 7px;
-    color: rgba(255,255,255,.7);
-    -webkit-transition: color 85ms ease-in;
-    transition: color 85ms ease-in;
+    cursor: pointer;
+    display: inline-block;
+    padding: 12px 120px 12px 12px;
+    color: rgba(255,255,255,0.7);
+    border-radius: 3px;
+    background-color: rgba(2, 2, 2, 0.12);
+    font-size: 14px;
+    width: 100%;
+}
+.placeholder:hover {
+    background: rgba(0,0,0,.3);
 }
 /*seccion de agregar lista*/
 .listName{
     cursor: pointer;
     background: rgba(0,0,0,.05);
-    border-color: #aaa;
+    border-color: #e2e4e6;
     box-shadow: inset 0 1px 8px rgba(0,0,0,.15);
     display: block;
     margin: 0;
@@ -59,15 +70,10 @@ section{
     min-height: 34px;
     padding: 7px;
 }
-.wrapperList.modAdd {
-    height: auto;
-    min-height: 30px;
-    padding: 4px;
-    border-radius: 3px;
-    background-color: #E2E4E6;
-    -webkit-transition: background 85ms ease-in,opacity 40ms ease-in,border-color 85ms ease-in;
-    transition: background 85ms ease-in,opacity 40ms ease-in,border-color 85ms ease-in;
+.inputAdd{
+    color: #929292;
 }
+
 /*bnts de agregar lista*/
 .listControls{
 	height: 2pc;
